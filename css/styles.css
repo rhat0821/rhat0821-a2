@@ -1,0 +1,97 @@
+/* Roman Hatfield 8920821 */
+/* Ruleset for html element */
+html {
+    font: normal normal normal normal 20px Arial, sans-serif;
+  }
+/* Ruleset for h1 and h2 */
+h1, h2 {
+    font-variant: small-caps;
+    color: black;
+}
+/* Ruleset for figure captions */
+figcaption {
+    font-weight: bold;
+    font-variant: small-caps;
+    font-size: 1rem;
+}
+/* Ruleset for quotes */
+q {
+    font-style: italic;
+    font-family: cursive;
+    font-size: 1rem;
+}
+/* Ruleset for footer paragraphs */
+footer p {
+    font-size: 1rem;
+}
+/* Ruleset for body element */
+body {
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+/* Ruleset for image elements */
+.main-section-figure img {
+    width: 13em;
+    height: 15em;
+    padding: 2rem;
+    border-radius: 8%;
+}
+/* Ruleset for figure elements */
+.main-section-figure {
+    width: 20em;
+    height: 20em;
+    padding: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin: 0 auto
+}
+/* Ruleset for iframe */
+iframe {
+    width: 40em;
+    height: 25em;
+    padding: 1rem;
+    border: 0.5em solid rgb(235, 94, 40);
+    border-radius: 8%
+}
+/* Ruleset for header and footer */
+header, footer {
+    text-align: center;
+    border: 0.5rem solid #252422;
+    background-image: linear-gradient(rgb(204, 197, 185), rgb(255, 252, 242), rgb(64, 61, 57));
+  }
+/* Ruleset for the four sections nested in main */
+.main-section {
+    text-align: center;
+    padding: 1rem;
+    background-color: hsla(38, 16%, 76%, 0.6);
+}
+/* Ruleset for the biography */
+#bio {
+    text-align: left;
+}
+/* Ruleset for quote */
+#quote {
+    padding: 1em;
+    border: 0.5rem solid #433;
+    box-shadow: 0.5em 0.5em 0.5em slategray;
+}
+/* Ruleset for relative path image */
+#relative-path-image {
+    border: 0.5rem solid rgb(235, 94, 40);
+    border-radius: 8%;
+    background-color: hsla(46, 100%, 97%, 0.8);
+}
+/* Ruleset for absolute path image */
+#absolute-path-image {
+    border: 0.5rem solid rgb(37, 36, 34);
+    border-radius: 8%;
+    background-color: hsla(46, 100%, 97%, 0.8);
+}
+#relative-path-image figcaption {
+    color: rgb(235, 94, 40);
+}
+#absolute-path-image figcaption {
+    color: rgb(37, 36, 34);
+}
