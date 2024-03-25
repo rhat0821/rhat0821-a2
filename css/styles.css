@@ -26,10 +26,11 @@ footer p {
 }
 /* Ruleset for body element */
 body {
-    width: 80%;
-    max-width: 1000px;
+    width: 90%;
+    max-width: 1400px;
     margin: 0 auto;
     padding: 1rem;
+    background-color: hsla(38, 16%, 76%, 0.6);
 }
 /* Ruleset for image elements */
 .main-section-figure img {
@@ -47,14 +48,6 @@ body {
     margin-bottom: 1rem;
     margin: 0 auto
 }
-/* Ruleset for iframe */
-iframe {
-    width: 40em;
-    height: 25em;
-    padding: 1rem;
-    border: 0.5em solid rgb(235, 94, 40);
-    border-radius: 8%
-}
 /* Ruleset for header and footer */
 header, footer {
     text-align: center;
@@ -65,33 +58,243 @@ header, footer {
 .main-section {
     text-align: center;
     padding: 1rem;
-    background-color: hsla(38, 16%, 76%, 0.6);
 }
 /* Ruleset for the biography */
 #bio {
     text-align: left;
+    float: left;
+    width: calc(70% - 1em);
+    margin-right: 1em;
+    box-sizing: border-box;
+}
+/* Ruleset for image container */
+.image-container {
+    border: 0.5rem solid rgb(235, 94, 40);
+    border-radius: 4%;
+    background-color: hsla(46, 100%, 97%, 0.8);
+    float: left;
+    width: calc(20% - 1em);
+    margin-right: 1em;
+    margin-left: 1em;
+    margin-bottom: 1em;
+    box-sizing: border-box;
+}
+
+/* Ruleset for image inside container */
+.image-container img {
+    width: 80%;
+    height: auto;
+    padding: 0.5rem;
+    border-radius: 4%;
+}
+
+/* Ruleset for image caption inside container */
+.image-container figcaption {
+    color: rgb(235, 94, 40);
+    text-align: center;
+    font-style: italic;
+    margin-top: 0.5rem;
+}
+/* Clear the float for nav */
+#nav {
+    overflow: hidden;
+}
+
+/* Remove bullet points from nav lists */
+#nav ul {
+    list-style-type: none;
+}
+
+/* Ruleset for the nav bar */
+#nav a {
+    padding: 0.5em 1em;
+    margin: 0.5em;
+    color: black;
+    background-color: white;
+    border: 2px solid black;
+    font-weight: bold;
+    font-style: italic;
+    font-variant: small-caps;
+    float: left;
+    text-decoration: none;
+    width: calc(50% - 1em);
+    box-sizing: border-box;
+}
+
+/* Ruleset to change the background and font colours when hovering over */
+#nav a:hover {
+    background-color: black;
+    color: white;
+    border-color: white;
+}
+
+/* Clear the float for main */
+#main {
+    overflow: hidden;
+}
+
+/* Float the main */
+#main {
+    float: left;
+    width: calc(70% - 1em);
+    box-sizing: border-box;
+}
+
+/* Ruleset for the aside */
+#aside {
+    float: left;
+    width: calc(30% - 1em);
+    box-sizing: border-box;
+}
+
+#aside h3 {
+    font-variant: small-caps;
+    color: #433;
+    text-align: center;
+}
+
+#aside table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#aside th, #aside td {
+    font-weight: bold;
+    font-style: italic;
+    font-variant: Serif;
+    color: black;
+    text-align: center;
+    border: 1px solid black;
+    padding: 0.5em;
+}
+
+#aside ul {
+    list-style-type: none;
+    text-decoration: none;
+    line-height: 1.5;
+}
+
+#aside ul li a:hover {
+    color: #333;
+}
+/* Clear the float for the elements above */
+.clear {
+    clear: both;
 }
 /* Ruleset for quote */
 #quote {
+    clear: both;
     padding: 1em;
     border: 0.5rem solid #433;
     box-shadow: 0.5em 0.5em 0.5em slategray;
+    margin-top: 1em;
 }
-/* Ruleset for relative path image */
-#relative-path-image {
-    border: 0.5rem solid rgb(235, 94, 40);
+/* Ruleset for iframe */
+iframe {
+    clear: both;
+    width: 40em;
+    height: 25em;
+    padding: 1rem;
+    border: 0.5em solid rgb(235, 94, 40);
     border-radius: 8%;
-    background-color: hsla(46, 100%, 97%, 0.8);
 }
-/* Ruleset for absolute path image */
-#absolute-path-image {
-    border: 0.5rem solid rgb(37, 36, 34);
-    border-radius: 8%;
-    background-color: hsla(46, 100%, 97%, 0.8);
+/* Put footer below the other elements and give it the clear property */
+#footer {
+    clear: both;
 }
-#relative-path-image figcaption {
-    color: rgb(235, 94, 40);
+/* Ruleset for Form */
+form {
+    /* Box Model */
+    padding: 1em;
+    margin: 1em;
 }
-#absolute-path-image figcaption {
-    color: rgb(37, 36, 34);
+
+label {
+    /* Font */
+    color: #333;
+    font-variant: small-caps;
+    font-weight: bold;
+    /* Alignment */
+    text-align: right;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    /* Height & Width */
+    height: 2em;
+    width: 10em;
+    /* Alignment */
+    text-align: left;
+    /* Box Model */
+    padding: 0.5em;
+    margin: 0.5em;
+}
+
+/* Media Queries */
+/* Screens smaller than or equal to 600 px*/
+@media (max-width: 600px) {
+    /* Decrease html font */
+    html {
+        font-size: 14px;
+    }
+
+    /* Remove the floats */
+    #nav,
+    #main,
+    #aside {
+        float: none;
+        width: auto;
+    }
+
+    /* Change the widths */
+    #nav {
+        width: 100%;
+    }
+
+    #main {
+        width: 100%;
+    }
+
+    #aside {
+        width: 100%;
+    }
+
+    /* Change box model and alignment */
+    body {
+        padding: 0.5rem;
+    }
+}
+/* Screens smaller than or equal to 900 px*/
+@media (max-width: 900px) {
+    /* Decrease html font */
+    html {
+        font-size: 16px;
+    }
+
+    /* Remove the floats */
+    #nav,
+    #main,
+    #aside {
+        float: none;
+        width: auto;
+    }
+
+    /* Change the widths */
+    #nav {
+        width: 100%;
+    }
+
+    #main {
+        width: 100%;
+    }
+    #aside {
+        width: 100%;
+    }
+    
+    /* Change box model and alignment */
+    body {
+        padding: 1rem;
+    }
 }

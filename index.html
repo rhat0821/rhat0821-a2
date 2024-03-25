@@ -5,16 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="Don, Cheadle, Actor, Iron Man, Marvel, Grammy, Awards"/>
-    <meta name="description" content="This webpage is about Don Cheadle"/>
+    <meta name="description" content="This webpage is about Don Cheadle"/>    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
-    <title>Don Cheadle</title>
+    <title>Don Cheadle - Index</title>
 </head>
+
 <body>
     <header>
         <h1>Don Cheadle</h1>
     </header>
-    <main>
+    <nav id="nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main id="main">
         <!--First Section: Biography-->
         <section class="main-section">
             <h2>Biography</h2>
@@ -28,22 +37,24 @@
         </section>
         <!--Second Section: Images-->
         <section class="main-section">
-            <h2>Images</h2>
+           <!--<h2>Images</h2>-->
             <!--Relative Path Image-->
-            <figure class="main-section-figure" id="relative-path-image">
-                <img src="../rhat0821-a1/images/DC1.jpg" alt="A photo of Don Cheadle">
+            <div class="image-container">
+                <img src="../rhat0821-a2/images/DC1.jpg" alt="A photo of Don Cheadle">
                 <figcaption>Don Cheadle in 2011.</figcaption>
+            </div>
             </figure>
-            <!--Absolute Path Image-->
+            <!--Absolute Path Image
             <figure class="main-section-figure" id="absolute-path-image">
                 <img src="https://i.pinimg.com/736x/40/62/e1/4062e1f5764cd6ce550d843f6acef78e.jpg" alt="A photo of Don Cheadle as War Machine">
                 <figcaption>Don Cheadle in <cite>Iron Man 2</cite>.</figcaption>
             </figure>
+            -->
         </section>
         <!--Third Section: Quote-->
         <section class="main-section">
-            <h2>Quote</h2>
             <blockquote id="quote" cite="https://www.brainyquote.com/quotes/don_cheadle_420790">
+                <h2>Quote</h2>
                 <q>I want to be a part of great things.</q><br>
                 <cite>-Don Cheadle, n.d.</cite>
             </blockquote>
@@ -57,7 +68,33 @@
             </iframe>
         </section>
     </main>
-    <footer>
+
+    <aside id="aside">
+        <h3>FAQs</h3>
+        <table>
+            <tr>
+                <td>What was Don's first acting role?</td>
+                <td><cite>The 1985 Comedy film Moving Violations.</cite></td>
+            </tr>
+            <tr>
+                <td>What character did Don play in the Avengers films?</td>
+                <td>Don plays as James Rhodes, also known as War Machine.</td>
+            </tr>
+            <tr>
+                <td>How old is Don?</td>
+                <td>As of November 29, 2023, Don is 59 years old.</td>
+            </tr>
+        </table>
+        
+        <h3>Resources</h3>
+        <ul>
+            <li><a href="https://www.imdb.com/name/nm0000332/" target="_blank" rel="noopener noreferrer">IMDb</a></li>
+            <li><a href="https://www.britannica.com/biography/Don-Cheadle" target="_blank" rel="noopener noreferrer">Britannica</a></li>
+            <li><a href="https://www.rottentomatoes.com/celebrity/don_cheadle" target="_blank" rel="noopener noreferrer">Rotten Tomatoes</a></li>
+        </ul>
+    </aside>
+    
+    <footer id="footer">
         <p>&copy; Roman Hatfield, 2024</p>
     </footer>
 </body>
